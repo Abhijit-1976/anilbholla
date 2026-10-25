@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anil Bholla | Leadership Coach</title>
+<meta name="description" content="Anil Bholla is a leadership coach in Mumbai. One to one leadership coaching and life guidance, in person or online. Book a free call.">
+<meta property="og:title" content="Anil Bholla | Leadership Coach">
+<meta property="og:description" content="Success is more than a designation. Leadership coaching and life guidance with Anil Bholla.">
+<meta property="og:image" content="https://anilbholla.com/hero-kurta.jpg">
+<meta property="og:url" content="https://anilbholla.com/">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="canonical" href="https://anilbholla.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700&display=swap">
+<style>
+/* Layout: a calm, left-aligned editorial page; navy bands frame the start and end, gold used only as a thin line and the one main button */
+:root{
+  --navy:#0B2545; --gold:#B9882E; --bg:#FFFFFF; --soft:#E8EDF2; --ivory:#F7F5F0;
+  --fg:#16233A; --muted:#4D5B70; --line:#D3DCE6; --on-navy:#F3F6FA; --on-navy-muted:#B9C6D6;
+  --heading:var(--navy); --logo-n:#0B2545; --band:#0B2545; --field:#FFFFFF;
+  --display:"Cormorant","Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --body:"Mulish","Segoe UI",system-ui,-apple-system,sans-serif;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1424; --soft:#101E33; --ivory:#141B26; --fg:#E4EAF2; --muted:#A7B4C6; --line:#24344D;
+  --heading:#F1F4F8; --logo-n:#E4EAF2; --band:#07101E; --field:#0E1A2C; --gold:#C99A42; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0A1424; --soft:#101E33; --ivory:#141B26; --fg:#E4EAF2; --muted:#A7B4C6; --line:#24344D;
+  --heading:#F1F4F8; --logo-n:#E4EAF2; --band:#07101E; --field:#0E1A2C; --gold:#C99A42; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.7}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);color:var(--heading);font-weight:600;line-height:1.12;text-wrap:balance;margin:0}
+h2{font-size:clamp(2.1rem,4.2vw,3rem)}
+h3{font-size:1.65rem}
+p{margin:0}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.lede{font-size:1.15rem;color:var(--muted);max-width:60ch}
+.prose{max-width:62ch;display:grid;gap:1em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.5em;font:700 .95rem/1 var(--body);letter-spacing:.02em;padding:15px 26px;border-radius:2px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#A07626}
+.btn-line{border-color:var(--heading);color:var(--heading);background:transparent}
+.btn-line:hover{background:var(--heading);color:var(--bg)}
+.arrow{transition:transform .2s}.btn:hover .arrow{transform:translateX(3px)}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:44px;height:32px;flex:none;display:block}
+.brand span{font-family:var(--display);font-size:1.45rem;font-weight:600;color:var(--heading);letter-spacing:.01em}
+nav.menu{display:flex;align-items:center;gap:26px;font-size:.92rem;font-weight:600}
+nav.menu a{text-decoration:none;color:var(--fg)}
+nav.menu a:not(.btn):hover{color:var(--gold)}
+nav.menu .btn{padding:11px 18px;font-size:.86rem}
+.lg-n{fill:var(--logo-n)}.lg-g{fill:var(--gold)}
+.menu-btn{display:none;align-items:center;gap:8px;font:700 .86rem/1 var(--body);color:var(--heading);background:transparent;border:1.5px solid var(--line);padding:11px 14px;border-radius:2px;cursor:pointer}
+.menu-btn i{display:block;width:16px;height:1.5px;background:currentColor;position:relative}
+.menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor}
+.menu-btn i::before{top:-5px}.menu-btn i::after{top:5px}
+.drawer{border-top:1px solid var(--line);background:var(--bg)}
+.drawer nav{display:grid;padding-block:8px 18px}
+.drawer a{display:block;padding:14px 0;font-weight:600;text-decoration:none;color:var(--fg);border-bottom:1px solid var(--line)}
+.drawer a:last-child{border-bottom:0}
+@media (max-width:860px){nav.menu a:not(.btn){display:none}.menu-btn{display:inline-flex}nav.menu{gap:10px}}
+@media (min-width:861px){.drawer{display:none!important}}
+.brand span,nav.menu .btn{white-space:nowrap}.menu-btn{min-height:42px}
+@media (max-width:520px){nav.menu .btn{display:none}}
+@media (max-width:360px){.menu-btn span{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--band);color:var(--on-navy);overflow:hidden}
+.hero-img{position:absolute;inset:0;background:url("hero-kurta.jpg") 72% 30%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,16,30,.94) 0%,rgba(7,16,30,.82) 38%,rgba(7,16,30,.15) 70%,rgba(7,16,30,0) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-block:clamp(80px,13vw,150px)}
+.hero-copy{max-width:540px;display:grid;gap:22px}
+.hero .top{font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--on-navy-muted)}
+.hero .top b{color:var(--gold);font-weight:700}
+.hero h1{color:#fff;font-size:clamp(2.9rem,6.4vw,4.8rem);font-weight:500;line-height:1.04}
+.hero h1 em{font-style:italic;color:#E2C27F}
+.hero p.sub{font-size:1.14rem;color:var(--on-navy);max-width:46ch}
+.hero .rule{width:64px;height:2px;background:var(--gold)}
+@media (max-width:760px){
+  .hero-img{position:relative;height:62vw;min-height:260px;background-position:78% 25%}
+  .hero::after{display:none}
+  .hero .wrap{padding-block:40px 56px}
+}
+
+section{padding-block:clamp(72px,9vw,112px)}
+.soft{background:var(--soft)}
+.ivory{background:var(--ivory)}
+
+/* who I am */
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,80px);align-items:center}
+.split>*{min-width:0}
+.portrait{position:relative;max-width:420px}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.portrait::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold);z-index:-1}
+.stack{display:grid;gap:22px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line);margin-top:10px}
+.facts div{padding:18px 16px 0 0}
+.facts div+div{padding-left:16px;border-left:1px solid var(--line)}
+.facts strong{display:block;font-family:var(--display);font-size:2.3rem;font-weight:600;color:var(--heading);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.facts span{display:block;font-size:.82rem;color:var(--muted);line-height:1.4;margin-top:6px}
+@media (max-width:1060px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.facts div:nth-child(3){padding-left:0;border-left:0}.facts div{padding-bottom:16px}}
+@media (max-width:760px){.split{grid-template-columns:1fr}.portrait{max-width:340px}}
+
+/* two ways */
+.ways-head{display:grid;gap:14px;margin-bottom:44px}
+.ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.way{background:var(--bg);padding:clamp(28px,4vw,44px);display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--heading)}
+.way:nth-child(2){border-top-color:var(--gold)}
+.way p{color:var(--muted);flex:1}
+.way .btn{align-self:flex-start}
+@media (max-width:760px){.ways{grid-template-columns:1fr}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,4vw,48px);margin-top:40px;counter-reset:s}
+.step{display:grid;gap:12px;padding-top:20px;border-top:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);font-family:var(--display);font-size:3rem;line-height:1;color:var(--gold);font-weight:500}
+.step p{font-size:1.08rem;color:var(--fg)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* closing band */
+.band{background:var(--band);color:var(--on-navy)}
+.band .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:clamp(52px,7vw,80px)}
+.band h2{color:#fff;font-weight:500;font-style:italic;max-width:24ch}
+
+/* service pages */
+.page-head{display:grid;gap:18px;margin-bottom:clamp(40px,6vw,64px);max-width:760px}
+.page-head h2{font-size:clamp(2.6rem,5.4vw,4rem);font-weight:500}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,64px)}
+.cols>*{min-width:0}
+.block{display:grid;gap:14px;align-content:start}
+.block h3{padding-bottom:10px;border-bottom:1px solid var(--line)}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+ul.ticks li{position:relative;padding-left:26px}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1.5px;background:var(--gold)}
+.note{background:var(--soft);padding:clamp(26px,4vw,40px);display:grid;gap:14px}
+.ivory .note{background:var(--bg)}
+.note .eyebrow{color:var(--muted)}
+.mt{margin-top:clamp(40px,6vw,64px)}
+.inline-cta{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px;margin-top:clamp(44px,6vw,64px);padding-top:32px;border-top:1px solid var(--line)}
+.inline-cta p{font-family:var(--display);font-size:1.7rem;font-style:italic;color:var(--heading)}
+@media (max-width:760px){.cols{grid-template-columns:1fr}}
+
+.life-top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,6vw,72px);align-items:end;margin-bottom:clamp(40px,6vw,64px)}
+.life-top>*{min-width:0}
+.life-top .page-head{margin-bottom:0}
+.life-top img{display:block;width:100%;aspect-ratio:5/4;object-fit:cover;object-position:50% 35%}
+@media (max-width:760px){.life-top{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,80px);align-items:start}
+.about>*{min-width:0}
+.about figure{margin:0;position:sticky;top:96px}
+.about figure img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;object-position:60% 30%}
+.hours{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:.95rem;color:var(--muted)}
+.hours b{font-family:var(--display);font-size:1.5rem;color:var(--heading);font-weight:600;margin-right:6px}
+.book{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;background:var(--soft);padding:clamp(24px,4vw,36px)}
+.spine{width:74px;height:108px;background:var(--navy);border-left:6px solid var(--gold);display:flex;align-items:center;justify-content:center;color:#E2C27F;font-family:var(--display);font-style:italic;font-size:.95rem;line-height:1.05;text-align:center;padding:6px;box-shadow:6px 6px 0 var(--line)}
+.book div{display:grid;gap:12px;justify-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr}.about figure{position:static;max-width:360px}}
+
+/* contact */
+.contact{background:var(--band);color:var(--on-navy)}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,6vw,80px);align-items:start}
+.contact .wrap>*{min-width:0}
+.contact h2{color:#fff;font-weight:500}
+.contact .lede{color:var(--on-navy-muted)}
+form{display:grid;gap:18px}
+label{display:grid;gap:8px;font-size:.85rem;font-weight:700;letter-spacing:.04em;color:var(--on-navy)}
+input{font:inherit;font-size:1rem;padding:14px 16px;border:1px solid #33496A;background:rgba(255,255,255,.06);color:#fff;border-radius:2px}
+input::placeholder{color:#8396AF}
+input:focus{outline:2px solid var(--gold);outline-offset:0;border-color:transparent}
+.err{font-size:.82rem;color:#F0B8A8;font-weight:600;min-height:0}
+form .btn{justify-self:start;margin-top:6px}
+.thanks{border-left:2px solid var(--gold);padding:18px 22px;background:rgba(255,255,255,.05);font-family:var(--display);font-size:1.6rem;color:#fff}
+@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
+
+footer{background:var(--band);color:var(--on-navy-muted);border-top:1px solid #1E3150;font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:28px}
+footer nav{display:flex;flex-wrap:wrap;gap:4px 20px}footer nav a{padding-block:10px}
+footer a{text-decoration:none}footer a:hover{color:#fff}
+footer .brand svg{width:34px;height:25px}footer .brand span{color:#fff;font-size:1.2rem}
+footer .lg-n{fill:#E4EAF2}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="1004 1212 2308 1680">
+    <g class="lg-n">
+      <path d="M 2610.0,1262.0 C 2661.0,1253.0 2724.5801371504053,1258.0492329322678 2793.0,1271.0 C 2912.375168429364,1293.5957775361012 3030.0153950235335,1339.9817395521698 3100.0,1399.0 C 3164.0140860020706,1452.9833010598604 3196.0,1515.0 3196.0,1590.0 C 3196.0,1756.0 3074.0,1881.0 2820.0,1935.0 C 3074.0,1989.0 3259.0,2173.0 3259.0,2400.0 C 3259.0,2650.0 3046.0,2801.0 2690.0,2843.0 C 2701.0,2825.0 2719.3337052296647,2815.811752670163 2736.0,2782.0 C 2766.329690684888,2720.4686270024877 2782.0,2645.0 2782.0,2400.0 C 2782.0,2138.0 2774.771467957595,2070.1517574155114 2733.0,2007.0 C 2711.884198087693,1975.0762954906513 2690.0,1953.0 2690.0,1935.0 C 2690.0,1917.0 2711.990019737922,1894.9934482259587 2733.0,1863.0 C 2755.9890818521785,1827.9928276549813 2759.0,1715.0 2759.0,1590.0 C 2759.0,1437.0 2751.7758540994487,1340.784961912338 2707.0,1297.0 C 2684.5493695308433,1275.0462032546218 2645.0,1267.0 2610.0,1262.0 Z"/>
+      <path d="M 1350.0,1352.0 C 1415.0193110971247,1345.1817022318387 1474.8916313400784,1368.1535037290093 1506.0,1390.0 C 1564.7966136110188,1431.2911398229276 1598.0,1489.0 1598.0,1548.0 C 1598.0,1617.0 1566.9290607055013,1664.8841969533826 1513.0,1698.0 C 1465.9378768859665,1726.899075556141 1397.038016138039,1733.6817144817987 1323.0,1725.0 C 1261.0306734196433,1717.7334627794871 1214.989598002497,1688.009997917601 1190.0,1662.0 C 1165.9900019223992,1637.0096019976952 1153.0,1594.0 1153.0,1545.0 C 1153.0,1483.0 1174.110608297546,1438.1367733839527 1210.0,1409.0 C 1254.1366647930986,1373.167684683492 1301.0141663862717,1357.1369353867972 1350.0,1352.0 Z"/>
+      <path d="M 1452.0,1954.0 C 1494.8114020658059,1948.3269185480976 1537.0,1954.0 1565.0,1969.0 C 1542.0,1990.0 1529.6035595877522,2014.1003430847336 1520.0,2070.0 C 1505.885423211166,2152.157036960154 1502.0,2271.0 1502.0,2401.0 C 1502.0,2556.0 1502.510800806813,2665.5240929269858 1519.0,2710.0 C 1527.2629006171069,2732.2873164241864 1537.4680990643212,2764.6384548711444 1559.0,2793.0 C 1570.247624152728,2807.815226995189 1583.0,2819.0 1590.0,2832.0 C 1554.0,2854.0 1505.4039976996337,2839.467438225045 1455.0,2827.0 C 1219.6669711099084,2768.790331443862 1061.0,2647.0 1061.0,2375.0 C 1061.0,2185.0 1218.6171354624198,1984.926340556772 1452.0,1954.0 Z"/>
+    </g>
+    <path class="lg-g" d="M 1749.0,1273.0 C 1932.0,1283.0 2116.245843513231,1356.7119368116973 2203.0,1431.0 C 2290.2482027640285,1505.711117743258 2323.8685761578135,1573.0056033141977 2336.0,1856.0 C 2348.860678665807,2156.0060048469945 2337.4467427638815,2545.141308992073 2387.0,2738.0 C 2399.8565634612655,2788.0370740148387 2417.0,2803.0 2441.0,2836.0 C 2436.0,2844.0 2373.004247308234,2841.9138127895076 2313.0,2839.0 C 2122.0131246578662,2829.725656516591 2012.0,2751.0 1960.0,2681.0 C 1908.0,2611.0 1897.8579597032206,2471.0030852338405 1891.0,2152.0 C 1884.8731000091511,1867.002699843486 1885.2671308489257,1565.9555263722823 1858.0,1403.0 C 1846.1163895259622,1331.9804266268704 1829.0,1302.0 1749.0,1273.0 Z"/>
+  </symbol>
+</svg>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="Anil Bholla, home"><svg aria-hidden="true"><use href="#logo" width="100%" height="100%"/></svg><span>Anil Bholla</span></a>
+    <nav class="menu" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#leadership">Leadership Coaching</a>
+      <a href="#life">Life Guidance</a>
+      <a href="#about">About</a>
+      <a class="btn btn-gold" href="#contact">Book a free call</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer"><i></i><span>Menu</span></button>
+    </nav>
+  </div>
+  <div class="drawer" id="drawer" hidden>
+    <nav class="wrap" aria-label="Mobile">
+      <a href="#home">Home</a><a href="#leadership">Leadership Coaching</a><a href="#life">Life Guidance</a><a href="#about">About</a><a href="#contact">Book a free call</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<div class="hero" id="home">
+  <div class="hero-img" role="img" aria-label="Anil Bholla"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="top">Anil Bholla <b>|</b> Leadership Coach</p>
+      <h1>Success is more than <em>a designation.</em></h1>
+      <div class="rule"></div>
+      <p class="sub">I work with leaders who want clearer decisions, stronger leadership and a life that feels as good as their career looks.</p>
+      <p><a class="btn btn-gold" href="#contact">Book a free call <span class="arrow">→</span></a></p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split">
+    <div class="portrait"><img src="anil-suit.jpg" alt="Anil Bholla in a dark suit"></div>
+    <div class="stack">
+      <p class="eyebrow">Who I am</p>
+      <h2>Forty years of leading people and carrying results.</h2>
+      <p class="lede">I have forty years of work experience, including 25 years with HSBC and senior roles in India and abroad. I know the pressure of leading people and carrying results. Today I coach leaders one to one, as a trained leadership coach.</p>
+      <div class="facts">
+        <div><strong>40</strong><span>years of work experience</span></div>
+        <div><strong>25</strong><span>years with HSBC</span></div>
+        <div><strong>1,000+</strong><span>hours of one to one coaching</span></div>
+        <div><strong>250+</strong><span>hours of mentoring</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <div class="ways-head"><p class="eyebrow">Two ways I can help</p><h2>Choose the conversation you need.</h2></div>
+    <div class="ways">
+      <article class="way">
+        <h3>Leadership Coaching</h3>
+        <p>For senior leaders and those preparing for bigger roles. We work on decisions, people, pressure and the way you lead.</p>
+        <a class="btn btn-line" href="#leadership">Know more <span class="arrow">→</span></a>
+      </article>
+      <article class="way">
+        <h3>Life Guidance</h3>
+        <p>For anyone who wants clarity on work, relationships or the next stage of life. A calm, private conversation.</p>
+        <a class="btn btn-line" href="#life">Know more <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <div class="steps">
+      <div class="step"><p>We begin with a free conversation.</p></div>
+      <div class="step"><p>We agree on what you want to change.</p></div>
+      <div class="step"><p>We meet regularly and you act between sessions.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <h2>If something here sounds like you, let us talk.</h2>
+    <a class="btn btn-gold" href="#contact">Book a free call <span class="arrow">→</span></a>
+  </div>
+</div>
+
+<!-- LEADERSHIP COACHING -->
+<section id="leadership">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Leadership Coaching</p>
+      <h2>Lead with clarity.</h2>
+      <p class="lede">Leading at the top can be lonely. Decisions are bigger, people expect more, and there is little time to think. Coaching gives you a private space to think clearly, with someone who has led teams and carried results.</p>
+    </div>
+    <div class="cols">
+      <div class="block"><h3>Who this is for</h3>
+        <ul class="ticks"><li>Senior leaders who want to lead better</li><li>Managers stepping into bigger roles</li><li>Founders and business owners</li><li>Leaders facing a change or a difficult decision</li></ul></div>
+      <div class="block"><h3>What we work on</h3>
+        <ul class="ticks"><li>Making better decisions under pressure</li><li>Leading and growing your people</li><li>Handling difficult conversations</li><li>Balancing work and personal life</li><li>Preparing for your next role</li></ul></div>
+      <div class="block"><h3>My approach</h3>
+        <p>I listen first. I ask questions that help you find your own answer. I do not give speeches or ready-made formulas. I bring my coaching training and a career across India and abroad, across banking, financial services and startups, so we stay practical. I have coached for over 1,000 hours, one to one.</p></div>
+      <div class="block"><h3>How we work</h3>
+        <ul class="ticks"><li>A free first conversation</li><li>Regular one to one sessions, in person in Mumbai or online</li><li>Action between sessions, reviewed at the next one</li></ul></div>
+    </div>
+    <div class="note mt">
+      <p class="eyebrow">Separate from coaching</p>
+      <h3>Mentoring</h3>
+      <div class="prose">
+        <p>Coaching helps you find your own answers. Mentoring is different. Here I share what I have learned, so you can learn from my experience. I have mentored for over 250 hours.</p>
+        <p>I have worked in India and abroad, across different cultures and ways of doing business. I have worked across functions in banking and financial services, and in a startup, and then I built a business from scratch. This suits leaders who want a guide who has seen both large institutions and young companies.</p>
+        <p>Mentoring is offered separately, and we agree at the start which one you need. When both help, we keep them in separate sessions.</p>
+      </div>
+    </div>
+    <div class="inline-cta"><p>Ready to think it through together?</p><a class="btn btn-gold" href="#contact">Book a free call <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- LIFE GUIDANCE -->
+<section id="life" class="ivory">
+  <div class="wrap">
+    <div class="life-top">
+      <div class="page-head">
+        <p class="eyebrow">Life Guidance</p>
+        <h2>Find your next step with clarity.</h2>
+        <p class="lede">There are times when work, family or a big decision leaves you unsure which way to go. Life Guidance is a calm, private conversation to help you think it through and decide for yourself.</p>
+      </div>
+      <img src="anil-polo.jpg" alt="Anil Bholla smiling, in a relaxed setting">
+    </div>
+    <div class="cols">
+      <div class="block"><h3>Who this is for</h3>
+        <ul class="ticks"><li>People at a turning point in career or life</li><li>Those preparing for retirement or a new stage</li><li>Professionals who feel stuck or unsure</li><li>Anyone who wants clarity before an important decision</li></ul></div>
+      <div class="block"><h3>What we talk about</h3>
+        <ul class="ticks"><li>Choices about work and career</li><li>Balancing family and personal goals</li><li>Building confidence for a change</li><li>Finding purpose in the next stage of life</li></ul></div>
+      <div class="block"><h3>My approach</h3>
+        <p>I listen without judging. I ask simple questions that help you see your own situation clearly. The answers stay yours. I bring my coaching training and the experience of a long career and a full life.</p></div>
+      <div class="block"><h3>How we work</h3>
+        <ul class="ticks"><li>A free first conversation</li><li>One to one sessions, in person in Mumbai or online</li><li>Complete privacy</li></ul></div>
+    </div>
+    <div class="note mt">
+      <h3>What this is not</h3>
+      <p class="prose">Life Guidance is not medical or mental health treatment. If you need that, I will gladly suggest you speak to a qualified doctor or therapist.</p>
+    </div>
+    <div class="inline-cta"><p>Ready to talk it through?</p><a class="btn btn-gold" href="#contact">Book a free call <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <figure><img src="anil-full-length.jpg" alt="Anil Bholla standing in a hotel corridor"></figure>
+    <div class="stack">
+      <p class="eyebrow">About</p>
+      <h2>About Anil Bholla</h2>
+      <p class="lede">I am a leadership coach and the author of <em>Restless Roots</em>.</p>
+      <p class="hours"><span><b>1,000+</b>hours of one to one coaching</span><span><b>250+</b>hours of mentoring</span></p>
+      <div class="block mt" style="margin-top:20px"><h3>My story in short</h3>
+        <div class="prose">
+          <p>I coach leaders and individuals who want clarity in their work and their life. I am a trained leadership coach, also trained in NLP and CBT, with a diploma in psychology.</p>
+          <p>Before coaching, I had about forty years of work experience, including 25 years with HSBC and senior roles in India and abroad. I have also worked in a startup and built a business from scratch. Along the way I worked in different countries and cultures, and learned that good leadership looks much the same everywhere. It begins with listening.</p>
+        </div></div>
+      <div class="block"><h3>How I work</h3>
+        <p class="prose">I listen first and ask questions that help you find your own answer. I keep things simple and practical, and your conversations stay private.</p></div>
+      <div class="book">
+        <div class="spine" aria-hidden="true">Restless Roots</div>
+        <div><p class="eyebrow">Books</p><p><em>Restless Roots</em> is available on Amazon.</p>
+          <a class="btn btn-line" href="https://mybook.to/restlessroots" target="_blank" rel="noopener">Get the book <span class="arrow">↗</span></a></div>
+      </div>
+      <div class="inline-cta" style="margin-top:12px"><p>If you would like to talk, I would be glad to hear from you.</p><a class="btn btn-gold" href="#contact">Book a free call <span class="arrow">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="stack">
+      <p class="eyebrow">Book a free call</p>
+      <h2>Let us talk.</h2>
+      <p class="lede">Tell me a little about what is on your mind. I will reply to set up a time for a free first conversation, in person in Mumbai or online.</p>
+    </div>
+    <div>
+      <form id="callForm" novalidate>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <label for="f-name">Name<input id="f-name" name="name" autocomplete="name" placeholder="Your name"><span class="err" id="e-name" hidden></span></label>
+        <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><span class="err" id="e-email" hidden></span></label>
+        <label for="f-topic">What would you like to talk about?<input id="f-topic" name="topic" placeholder="One line is enough"></label>
+        <button class="btn btn-gold" type="submit">Send</button>
+      </form>
+      <p class="err" id="e-send" hidden>Sorry, your message did not go through. Please try again in a moment.</p>
+      <p class="thanks" id="thanks" hidden>Thank you. I will get back to you soon.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#home"><svg aria-hidden="true"><use href="#logo" width="100%" height="100%"/></svg><span>Anil Bholla</span></a>
+    <nav aria-label="Footer"><a href="#leadership">Leadership Coaching</a><a href="#life">Life Guidance</a><a href="#about">About</a><a href="#contact">Book a free call</a></nav>
+    <span>© 2026 Anil Bholla</span>
+  </div>
+</footer>
+
+<script>
+// Form messages are delivered by FormSubmit (formsubmit.co). After Anil activates it,
+// replace the email below with the private code FormSubmit sends him.
+const FORM_ENDPOINT='https://formsubmit.co/ajax/anilbholla@gmail.com';
+const mb=document.getElementById('menuBtn'), dr=document.getElementById('drawer');
+mb.addEventListener('click',()=>{const open=dr.hidden;dr.hidden=!open;mb.setAttribute('aria-expanded',open)});
+dr.addEventListener('click',e=>{if(e.target.tagName==='A'){dr.hidden=true;mb.setAttribute('aria-expanded','false')}});
+const form=document.getElementById('callForm');
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=form.elements['name'].value.trim(), m=form.elements['email'].value.trim();
+  const en=document.getElementById('e-name'), ee=document.getElementById('e-email');
+  en.hidden=!!n; en.textContent='Please add your name.';
+  const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m);
+  ee.hidden=ok; ee.textContent=m?'Please check your email address.':'Please add your email so I can reply.';
+  if(!n||!ok) return;
+  if(form.elements['_honey'].value) return;
+  const btn=form.querySelector('button[type=submit]'), es=document.getElementById('e-send');
+  btn.disabled=true; btn.textContent='Sending…'; es.hidden=true;
+  fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+    body:JSON.stringify({name:n,email:m,topic:form.elements['topic'].value.trim(),_subject:'New free call request from anilbholla.com',_template:'table'})})
+  .then(r=>r.json().then(j=>{if(!r.ok||j.success==='false'||j.success===false)throw 0}))
+  .then(()=>{form.hidden=true;document.getElementById('thanks').hidden=false})
+  .catch(()=>{es.hidden=false;btn.disabled=false;btn.textContent='Send'});
+});
+</script>
+</body>
+</html>
